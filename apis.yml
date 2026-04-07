@@ -4,8 +4,7 @@ url: >-
 apis:
   - aid: mockoon:mockoon
     name: Mockoon
-    tags:
-      - API
+    tags: []
     humanURL: https://mockoon.com/
     properties:
       - url: https://mockoon.com/
@@ -15,9 +14,9 @@ apis:
       No remote deployment, no account required, free and open-source.
 name: Mockoon
 tags:
-  - Platform
-  - Mocking
   - Mock Servers
+  - Mocking
+  - Platform
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
