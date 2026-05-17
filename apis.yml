@@ -42,18 +42,18 @@ apis:
     properties:
       - type: Documentation
         url: https://mockoon.com/docs/latest/about/
-      - type: Getting Started
+      - type: GettingStarted
         url: https://mockoon.com/tutorials/getting-started/
       - type: Download
         url: https://mockoon.com/download/
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/mockoon/mockoon
 common:
   - type: Website
     url: https://mockoon.com/
   - type: Documentation
     url: https://mockoon.com/docs/latest/about/
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/mockoon
   - type: Tutorials
     url: https://mockoon.com/tutorials/
