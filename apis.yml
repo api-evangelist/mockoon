@@ -49,6 +49,8 @@ apis:
       - type: GitHubRepository
         url: https://github.com/mockoon/mockoon
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/mockoon
   - type: Website
     url: https://mockoon.com/
   - type: Documentation
