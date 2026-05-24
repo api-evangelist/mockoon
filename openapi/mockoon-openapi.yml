@@ -1,0 +1,84 @@
+openapi: 3.1.0
+info:
+  title: Mockoon Admin API
+  version: "1.0"
+  summary: REST API for administering a running Mockoon mock server.
+  description: |
+    Mockoon exposes an Admin API on every running mock server, mounted under
+    `/mockoon-admin`, that lets developers and CI pipelines inspect and
+    mutate runtime state: data buckets, environment variables, global
+    variables, transaction logs, and server state.
+    See https://mockoon.com/docs/latest/admin-api/overview/
+  contact:
+    name: Mockoon
+    url: https://mockoon.com/
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+servers:
+  - url: http://localhost:{port}
+    description: Local Mockoon mock server
+    variables:
+      port:
+        default: "3000"
+        description: Port the mock server is listening on
+security:
+  - {}
+tags:
+  - name: Data Buckets
+    description: Inspect and reset data buckets defined in the mock environment.
+paths:
+  /mockoon-admin/data-buckets:
+    get:
+      tags: [Data Buckets]
+      summary: List data bucket status
+      description: Returns the status of all data buckets without their values.
+      operationId: listDataBuckets
+      responses:
+        "200":
+          description: Array of bucket status objects
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                    name:
+                      type: string
+                    parsed:
+                      type: boolean
+                    validJson:
+                      type: boolean
+  /mockoon-admin/data-buckets/{nameOrId}:
+    get:
+      tags: [Data Buckets]
+      summary: Get a data bucket value
+      description: Retrieve the full, parsed value of a specific data bucket.
+      operationId: getDataBucket
+      parameters:
+        - in: path
+          name: nameOrId
+          required: true
+          schema:
+            type: string
+          description: Bucket name or id.
+      responses:
+        "200":
+          description: Data bucket value (any JSON)
+          content:
+            application/json:
+              schema: {}
+        "404":
+          description: Data bucket not found
+  /mockoon-admin/data-buckets/purge:
+    post:
+      tags: [Data Buckets]
+      summary: Purge all data buckets (POST)
+      description: Reset all data buckets to their initial state.
+      operationId: purgeDataBucketsPost
+      responses:
+        "200":
+          description: All data buckets reset
