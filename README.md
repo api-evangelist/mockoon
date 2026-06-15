@@ -2,7 +2,7 @@
 
 Mockoon is the easiest and quickest way to design and run mock REST APIs. Available as a free, open-source desktop application and CLI, it lets developers build, share, and serve realistic mock endpoints locally, in CI, or in containers. No remote deployment, no account required.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/mockoon/refs/heads/main/apis.yml)
+**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/mockoon/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/mockoon/refs/heads/main/apis.yml)
 
 ## Scope
 
@@ -12,7 +12,14 @@ Mockoon is the easiest and quickest way to design and run mock REST APIs. Availa
 
 ## Tags
 
- - Mock Servers, Mocking, Testing, REST API, Desktop, CLI, Platform, Open Source
+- Mock Servers
+- Mocking
+- Testing
+- REST API
+- Desktop
+- CLI
+- Platform
+- Open Source
 
 ## Timestamps
 
@@ -25,11 +32,14 @@ Mockoon is the easiest and quickest way to design and run mock REST APIs. Availa
 
 Mockoon ships as a desktop application, a CLI, and a serverless package for designing and running mock REST APIs. Mocks are configured in Mockoon and exposed locally as HTTP endpoints; the tool itself does not publish a remote control-plane REST API, so no OpenAPI definition is included in this repository.
 
-**Human URL:** [https://mockoon.com/](https://mockoon.com/)
+- **Human URL:** [https://mockoon.com/](https://mockoon.com/)
 
 #### Tags
 
- - Mock Server, Mocking, Desktop, CLI
+- Mock Server
+- Mocking
+- Desktop
+- CLI
 
 #### Properties
 
@@ -37,15 +47,19 @@ Mockoon ships as a desktop application, a CLI, and a serverless package for desi
 - [Getting Started](https://mockoon.com/tutorials/getting-started/)
 - [Download](https://mockoon.com/download/)
 - [GitHub Repository](https://github.com/mockoon/mockoon)
+- [Postman Collection](collections/mockoon.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/mockoon.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ## Common Properties
 
+- [LinkedIn](https://www.linkedin.com/company/mockoon)
 - [Website](https://mockoon.com/)
 - [Documentation](https://mockoon.com/docs/latest/about/)
 - [GitHub Organization](https://github.com/mockoon)
 - [Tutorials](https://mockoon.com/tutorials/)
 - [Blog](https://mockoon.com/blog/)
 - [Issues](https://github.com/mockoon/mockoon/issues)
+- [L L Ms Txt](https://mockoon.com/llms.txt)
 
 ## Maintainers
 

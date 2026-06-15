@@ -1,0 +1,59 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Mockoon Admin API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Data Buckets",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List data bucket status",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://localhost:{port}/mockoon-admin/data-buckets"
+          },
+          "docs": "Returns the status of all data buckets without their values."
+        },
+        {
+          "info": {
+            "name": "Get a data bucket value",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://localhost:{port}/mockoon-admin/data-buckets/:nameOrId",
+            "params": [
+              {
+                "name": "nameOrId",
+                "value": "",
+                "type": "path",
+                "description": "Bucket name or id."
+              }
+            ]
+          },
+          "docs": "Retrieve the full, parsed value of a specific data bucket."
+        },
+        {
+          "info": {
+            "name": "Purge all data buckets (POST)",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:{port}/mockoon-admin/data-buckets/purge"
+          },
+          "docs": "Reset all data buckets to their initial state."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
