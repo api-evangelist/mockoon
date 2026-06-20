@@ -6,7 +6,7 @@ description: >-
   developers build, share, and serve realistic mock endpoints locally, in CI,
   or in containers. No remote deployment, no account required.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: >-
   https://raw.githubusercontent.com/api-evangelist/mockoon/refs/heads/main/apis.yml
 access: 3rd-Party
@@ -32,7 +32,7 @@ apis:
       Mockoon and exposed locally as HTTP endpoints; the tool itself does not
       publish a remote control-plane REST API, so no OpenAPI definition is
       included in this repository.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://mockoon.com/
     tags:
       - Mock Server
