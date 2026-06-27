@@ -63,7 +63,7 @@ common:
     url: https://mockoon.com/blog/
   - type: Issues
     url: https://github.com/mockoon/mockoon/issues
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://mockoon.com/llms.txt
 maintainers:
   - FN: Kin Lane
