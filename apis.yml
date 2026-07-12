@@ -49,6 +49,10 @@ apis:
       - type: GitHubRepository
         url: https://github.com/mockoon/mockoon
 common:
+  - type: TrustCenter
+    url: security/mockoon-trust-center.yml
+  - type: DomainSecurity
+    url: security/mockoon-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/mockoon
   - type: Website

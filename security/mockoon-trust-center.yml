@@ -1,0 +1,14 @@
+generated: '2026-07-11'
+method: searched
+probe: true
+source: https://mockoon.com/trust/
+url: https://mockoon.com/trust/
+certifications:
+- PCI DSS
+- GDPR
+evidence:
+- source: https://mockoon.com/trust/
+  keywords:
+  - pci-dss
+  - trust center
+  - gdpr
