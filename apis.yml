@@ -6,7 +6,19 @@ description: >-
   developers build, share, and serve realistic mock endpoints locally, in CI,
   or in containers. No remote deployment, no account required.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: open
+  trial: false
+  try_now: true
+  public: true
+  label: Freemium · Open access
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mockoon.png
 url: >-
   https://raw.githubusercontent.com/api-evangelist/mockoon/refs/heads/main/apis.yml
 access: 3rd-Party
@@ -24,30 +36,37 @@ tags:
   - Platform
   - Open Source
 apis:
-  - aid: mockoon:mockoon
-    name: Mockoon
-    description: >-
-      Mockoon ships as a desktop application, a CLI, and a serverless package
-      for designing and running mock REST APIs. Mocks are configured in
-      Mockoon and exposed locally as HTTP endpoints; the tool itself does not
-      publish a remote control-plane REST API, so no OpenAPI definition is
-      included in this repository.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://mockoon.com/
-    tags:
-      - Mock Server
-      - Mocking
-      - Desktop
-      - CLI
-    properties:
-      - type: Documentation
-        url: https://mockoon.com/docs/latest/about/
-      - type: GettingStarted
-        url: https://mockoon.com/tutorials/getting-started/
-      - type: Download
-        url: https://mockoon.com/download/
-      - type: GitHubRepository
-        url: https://github.com/mockoon/mockoon
+- aid: mockoon:mockoon
+  name: Mockoon
+  description: >-
+    Mockoon ships as a desktop application, a CLI, and a serverless package for designing and running
+    mock REST APIs. Mocks are configured in Mockoon and exposed locally as HTTP endpoints; the tool itself
+    does not publish a remote control-plane REST API, so no OpenAPI definition is included in this repository.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://mockoon.com/
+  tags:
+  - Mock Server
+  - Mocking
+  - Desktop
+  - CLI
+  properties:
+  - type: Documentation
+    url: https://mockoon.com/docs/latest/about/
+  - type: GettingStarted
+    url: https://mockoon.com/tutorials/getting-started/
+  - type: Download
+    url: https://mockoon.com/download/
+  - type: GitHubRepository
+    url: https://github.com/mockoon/mockoon
+- aid: mockoon:mockoon-data-buckets-api
+  name: Mockoon Data Buckets API
+  description: Inspect and reset data buckets defined in the mock environment.
+  humanURL: https://mockoon.com/
+  tags:
+  - Data Buckets
+  properties:
+  - type: OpenAPI
+    url: openapi/mockoon-data-buckets-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/mockoon-agentic-access.yml
