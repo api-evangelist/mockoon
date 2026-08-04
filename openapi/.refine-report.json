@@ -1,0 +1,14 @@
+{
+  "provider": "mockoon",
+  "sources": [
+    "mockoon-data-buckets-api-openapi.yml"
+  ],
+  "outputs": [
+    "mockoon-data-buckets-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
