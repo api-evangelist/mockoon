@@ -68,6 +68,15 @@ apis:
   - type: OpenAPI
     url: openapi/mockoon-data-buckets-api-openapi.yml
 common:
+  - type: Releases
+    url: https://github.com/mockoon/mockoon/releases
+  - type: CodeOfConduct
+    url: https://github.com/mockoon/.github/blob/main/CODE_OF_CONDUCT.md
+  - type: ContributionGuide
+    url: https://github.com/mockoon/mockoon/blob/main/CONTRIBUTING.md
+  - type: License
+    name: MIT
+    url: https://github.com/mockoon/mockoon/blob/main/LICENSE
   - type: AgenticAccess
     url: agentic-access/mockoon-agentic-access.yml
   - type: TrustCenter
