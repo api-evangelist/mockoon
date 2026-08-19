@@ -1,0 +1,353 @@
+{
+  "item": [
+    {
+      "id": "5f383d97-8fa8-4d92-94e9-8250ad74d836",
+      "name": "Data Buckets",
+      "description": {
+        "content": "Inspect and reset data buckets defined in the mock environment.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "382e868f-9dc0-43da-939b-d7173cbaf529",
+          "name": "List data bucket status",
+          "request": {
+            "name": "List data bucket status",
+            "description": {
+              "content": "Returns the status of all data buckets without their values.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "mockoon-admin",
+                "data-buckets"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Port the mock server is listening on",
+                  "type": "any",
+                  "value": "{{port}}",
+                  "key": "port"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b4cbca92-a1c4-49b8-b858-109160a98409",
+              "name": "Array of bucket status objects",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "mockoon-admin",
+                    "data-buckets"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Port the mock server is listening on",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"id\": \"string\",\n    \"name\": \"string\",\n    \"parsed\": true,\n    \"validJson\": false\n  },\n  {\n    \"id\": \"string\",\n    \"name\": \"string\",\n    \"parsed\": false,\n    \"validJson\": false\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "65b422f5-cb71-4f30-a115-5a8b14596e0b",
+          "name": "Get a data bucket value",
+          "request": {
+            "name": "Get a data bucket value",
+            "description": {
+              "content": "Retrieve the full, parsed value of a specific data bucket.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "mockoon-admin",
+                "data-buckets",
+                ":nameOrId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "nameOrId",
+                  "description": "(Required) Bucket name or id."
+                },
+                {
+                  "description": "Port the mock server is listening on",
+                  "type": "any",
+                  "value": "{{port}}",
+                  "key": "port"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b432faef-5240-48a4-ad8d-25cc5c3dbd36",
+              "name": "Data bucket value (any JSON)",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "mockoon-admin",
+                    "data-buckets",
+                    ":nameOrId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "nameOrId",
+                      "description": "(Required) Bucket name or id."
+                    },
+                    {
+                      "description": "Port the mock server is listening on",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7ec259d1-84d6-452c-9544-0c2639b0e96f",
+              "name": "Data bucket not found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "mockoon-admin",
+                    "data-buckets",
+                    ":nameOrId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "nameOrId",
+                      "description": "(Required) Bucket name or id."
+                    },
+                    {
+                      "description": "Port the mock server is listening on",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5653c4f1-70b6-4dec-9c80-66eb23370cb3",
+          "name": "Purge all data buckets (POST)",
+          "request": {
+            "name": "Purge all data buckets (POST)",
+            "description": {
+              "content": "Reset all data buckets to their initial state.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "mockoon-admin",
+                "data-buckets",
+                "purge"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Port the mock server is listening on",
+                  "type": "any",
+                  "value": "{{port}}",
+                  "key": "port"
+                }
+              ]
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "87beff1a-d2a1-4309-b806-c0af7bb15e73",
+              "name": "All data buckets reset",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "mockoon-admin",
+                    "data-buckets",
+                    "purge"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Port the mock server is listening on",
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Port the mock server is listening on",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "3000",
+      "key": "port"
+    },
+    {
+      "type": "string",
+      "value": "http://localhost:{{port}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "noauth"
+  },
+  "info": {
+    "_postman_id": "57829302-8299-4adb-bf82-77d7321153d6",
+    "name": "Mockoon Admin Data Buckets API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Mockoon exposes an Admin API on every running mock server, mounted under\n`/mockoon-admin`, that lets developers and CI pipelines inspect and\nmutate runtime state: data buckets, environment variables, global\nvariables, transaction logs, and server state.\nSee https://mockoon.com/docs/latest/admin-api/overview/\n\n\nContact Support:\n Name: Mockoon",
+      "type": "text/plain"
+    }
+  }
+}
