@@ -34,6 +34,15 @@ tags:
   - Desktop
   - CLI
   - Platform
+  - Open-Source
+tags_raw:
+  - Mock Servers
+  - Mocking
+  - Testing
+  - REST API
+  - Desktop
+  - CLI
+  - Platform
   - Open Source
 apis:
 - aid: mockoon:mockoon
