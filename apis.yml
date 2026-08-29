@@ -6,6 +6,19 @@ description: >-
   developers build, share, and serve realistic mock endpoints locally, in CI,
   or in containers. No remote deployment, no account required.
 type: Index
+deliveryModel:
+  model: self-hosted
+  license: MIT
+  open_source: true
+  commercial: false
+  callable_host: false
+  label: Self-hosted open source · you run it yourself
+  confidence: high
+  source:
+  - license
+  - openapi
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: open
